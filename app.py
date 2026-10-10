@@ -5,7 +5,7 @@ import joblib
 model = joblib.load("Naive_bayes.pkl")
 scaler = joblib.load("scaler.pkl")
 expected_columns = joblib.load("columns.pkl")
-st.title("Heart stroke prediction by MAHI")
+st.title("Heart stroke prediction")
 st.markdown("Provide the following details")
 
 age = st.slider("Age",10,100,40)
