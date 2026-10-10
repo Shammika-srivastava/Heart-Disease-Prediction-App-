@@ -9,13 +9,10 @@ Gender (M/F) → Biological sex: M = Male, F = Female.
 
 Chest Pain Type → Describes the kind of chest pain:
  
-  ATA (Atypical Angina) → Chest pain not typical of heart disease.
-  
+  **ATA (Atypical Angina) → Chest pain not typical of heart disease.
   NAP (Non-Anginal Pain) → Pain not related to the heart.
-  
   TA (Typical Angina) → Classic chest pain linked to reduced blood flow.
-  
-  ASY (Asymptomatic) → No chest pain, but heart disease may still be present.
+  ASY (Asymptomatic) → No chest pain, but heart disease may still be present.**
 
 Resting Blood Pressure (mmHg) → Blood pressure measured while at rest.
 
@@ -23,17 +20,14 @@ Cholesterol (mg/dL) → Amount of cholesterol in the blood. High values can indi
 
 Fasting Blood Sugar (>120 mg/dL) → Whether fasting blood sugar is above 120 mg/dL:
   
-  1 = Yes (high)
-  
-  0 = No (normal)
+  **1 = Yes (high)
+  0 = No (normal)**
 
 Resting ECG → Results of an electrocardiogram taken at rest:
   
-  Normal → No abnormalities.
-  
+  **Normal → No abnormalities.
   ST → ST-T wave abnormality (possible ischemia).
-  
-  LVH → Signs of left ventricular hypertrophy (thickened heart muscle).
+  LVH → Signs of left ventricular hypertrophy (thickened heart muscle).**
 
 Max Heart Rate → The highest heart rate achieved during exercise.
 
@@ -43,9 +37,7 @@ Oldpeak (ST Depression) → Depression in the ST segment of an ECG during exerci
 
 ST Slope → The slope of the ST segment during exercise:
   
-  Up → Upsloping (usually normal).
-  
+  **Up → Upsloping (usually normal).
   Flat → Flat (possible abnormality).
-  
-  Down → Downsloping (often linked to heart disease).
+  Down → Downsloping (often linked to heart disease).**
 
