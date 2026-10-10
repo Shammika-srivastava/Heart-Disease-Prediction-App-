@@ -20,35 +20,6 @@ exercise_angina = st.selectbox("Exercise-Induced Angina", ["Y","N"])
 oldpeak = st.slider("OldPeak(ST Depression)",0.0,6.0,1.0)
 st_slope = st.selectbox("ST Slope",["Up","Flat","Down"])
 
-# if st.button("Predict"):
-#     raw_input = {
-#         'Age' : age,
-#         'RestingBP' : resting_bp,
-#         'Cholesterol' : cholestrol,
-#         'FastingBS' : fasting_bs,
-#         'MaxHR' : max_hr,
-#         'Oldpeak' : oldpeak,
-#         'isFemale': 1 if gender == 'F' else 0,
-#         'ChestPainType_'+chest_pain:1,
-#         'RestingECG'+ resting_ecg : 1,
-#         'ExerciseAngina'+ exercise_angina : 1,
-#         'ST_Slope_' + st_slope :1
-#     }
-
-#     input_df = pd.DataFrame([raw_input])
-#     for col in expected_columns:
-#         if col not in input_df.columns:
-#             input_df[col]=0
-
-#     input_df = input_df[expected_columns]
-#     scaled_input = scaler.transform(input_df)
-#     prediction = model.predict(scaled_input)[0]
-
-#     if prediction == 1:
-#         st.error("High risk of heart disease")
-#     else:
-#         st.success("Low risk of heart disease")
-
 if st.button("Predict"):
     raw_input = {
         'Age': age,
@@ -73,8 +44,6 @@ if st.button("Predict"):
 
     input_df = pd.DataFrame([raw_input])
     input_df = input_df[expected_columns]
-
-    # scaled_input = scaler.transform(input_df)
     
     numeric_cols = [
         'Age', 'RestingBP', 'Cholesterol', 'MaxHR', 'Oldpeak'
@@ -99,9 +68,4 @@ if st.button("Predict"):
     # Show metric
     st.metric(label="Heart Disease Risk", value=f"{probability*100:.1f}%")
 
-
-    # if prediction == 1:
-    #     st.error("High risk of heart disease")
-    # else:
-    #     st.success("Low risk of heart disease")
 
